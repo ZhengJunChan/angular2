@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+
+<ul>
+	<li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+		{{hero.id}} {{hero.name}}		
+	</li>
+</ul>
+
+<hero-detail [hero]="selectedHero"><hero-detail>
